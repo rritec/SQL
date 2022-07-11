@@ -17,7 +17,7 @@ group by deptno
 
 2. Get department number wise salarys with more than 1000 salary expenditure.
 
-    ``` 
+    ``` SQL
   select DEPTNO , sum(sal) Total_sal 
 from EMP 
 where SAL > 1000
@@ -27,3 +27,11 @@ group by deptno
 
 
 3. Get department number wise salarys with more than 10000 salary expenditure sorting department number fro small to big.
+
+``` SQL
+select DEPTNO , sum(sal) Total_sal 
+from EMP
+where SAL > 1000
+group by deptno
+order by DEPTNO asc
+```
