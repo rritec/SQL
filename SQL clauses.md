@@ -29,15 +29,15 @@ having sum(SAL) > 10000
 ![image](https://user-images.githubusercontent.com/96119184/178311407-ac09fed7-5b75-41d7-a80d-d7a3b3b13009.png)
 
 
-3. Get department number wise salarys with more than 10000 salary expenditure sorting department number fro small to big.
+3. Get department number wise salarys with more than 10000 salary expenditure sorting department number from small to big.
 
 ``` SQL
-select DEPTNO , sum(sal) Total_sal 
+select DEPTNO , sum(sal)  Total_sal 
 from EMP
-where SAL > 1000
-group by deptno
-order by DEPTNO asc
+group by deptno 
+having sum(SAL) > 10000
+order by DEPTNO ASC
 ```
-![image](https://user-images.githubusercontent.com/96119184/178275531-5f152fed-834c-42d3-896e-b6b402d4ca66.png)
+![image](https://user-images.githubusercontent.com/96119184/178312555-98551330-c09b-4cc0-8ade-bd7caa599b18.png)
 
 
