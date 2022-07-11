@@ -15,6 +15,7 @@ group by deptno
 ![image](https://user-images.githubusercontent.com/96119184/178267717-8056e3eb-ca27-48bf-bdcd-f18c6d2d1623.png)
 
 
+
 2. Get department number wise salarys with more than 1000 salary expenditure.
 
     ``` SQL
