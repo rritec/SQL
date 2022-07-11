@@ -23,7 +23,6 @@ from EMP
 where SAL > 1000
 group by deptno
 ```
-
 ![image](https://user-images.githubusercontent.com/96119184/178273018-7a6d94e9-11d9-46ca-8aa3-23de40d0bde6.png)
 
 3. Get department number wise salarys with more than 10000 salary expenditure sorting department number fro small to big.
