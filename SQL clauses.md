@@ -35,3 +35,6 @@ where SAL > 1000
 group by deptno
 order by DEPTNO asc
 ```
+![image](https://user-images.githubusercontent.com/96119184/178275531-5f152fed-834c-42d3-896e-b6b402d4ca66.png)
+
+
