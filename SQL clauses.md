@@ -81,7 +81,11 @@ order by dname asc
 ![image](https://user-images.githubusercontent.com/96119184/178415075-7629cf0e-8e79-4da2-a858-85083c98d6b2.png)
 
 
-
+7. Get All Department Names and count of employees in each department.
+9. Get top salary employee entire information.
+10. Get top 2nd salary employee entire information.
+11. Get bottom salary employee entire information.
+12. Get bottom 2nd salary employee entire information.
 
 
 
