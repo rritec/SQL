@@ -132,6 +132,16 @@ WHERE sal = (SELECT Min(sal)
 
 12. Get bottom 2nd salary employee entire information.
 
+``` SQL
+select * from (SELECT e.*,
+   DENSE_RANK() OVER (ORDER BY sal asc) AS Rnk
+FROM emp as e) as sub_query
+where rnk=2
+```
+
+![image](https://user-images.githubusercontent.com/96119184/178486037-0450f9a1-bf15-46fc-87c7-b88235b5a28d.png)
+
+
 
 
 
