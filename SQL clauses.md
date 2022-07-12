@@ -83,7 +83,7 @@ order by dname asc
 
 7. Get All Department Names and count of employees in each department.
 
-''' SQL
+``` SQL
 Select DNAME, count(ENAME) count_of_employess
 from emp,dept
 where emp.deptno=dept.deptno
@@ -93,10 +93,17 @@ group by DNAME
 ![image](https://user-images.githubusercontent.com/96119184/178429103-ebd52c17-13e0-4711-951c-55ef04cefe4e.png)
 
 
-
-
-
 9. Get top salary employee entire information.
+
+
+``` SQL
+SELECT *
+FROM emp
+WHERE sal = (SELECT MAX(sal)
+                FROM emp)
+```
+
+![image](https://user-images.githubusercontent.com/96119184/178471472-b6242384-4963-4538-83a0-3a96db8635cf.png)
 
 
 10. Get top 2nd salary employee entire information.
