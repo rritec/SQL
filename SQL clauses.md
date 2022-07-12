@@ -44,10 +44,10 @@ order by DEPTNO ASC
 4. Get department name wise total salarys.
 
 ``` SQL
-   Select DNAME,sum(sal) Total_sal
-from emp,dept
-where emp.deptno=dept.deptno
-group by DNAME
+ Select DNAME,sum(sal) Total_sal
+ from emp,dept
+ where emp.deptno=dept.deptno
+ group by DNAME
 ```
 
  
@@ -56,7 +56,32 @@ group by DNAME
 
    
 5.  Get department name wise salarys with more than 10000 salary expenditure.
+
+``` SQL
+Select DNAME,sum(sal) Total_sal
+from emp,dept
+where emp.deptno=dept.deptno
+group by DNAME
+Having sum(SAL) > 10000
+```
+
+![image](https://user-images.githubusercontent.com/96119184/178414763-4d4024b7-1a2d-49f7-b07a-f4400adc779d.png)
+
+
 6.  Get department number wise salarys with more than 10000 salary expenditure sorting department number from small to big.
+```SQL
+Select DNAME,sum(sal) Total_sal
+from emp,dept
+where emp.deptno=dept.deptno
+group by DNAME
+Having sum(SAL) > 10000
+order by dname asc
+```
+
+![image](https://user-images.githubusercontent.com/96119184/178415075-7629cf0e-8e79-4da2-a858-85083c98d6b2.png)
+
+
+
 
 
 
