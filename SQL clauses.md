@@ -31,6 +31,7 @@ having sum(SAL) > 10000
 
 3. Get department number wise salarys with more than 10000 salary expenditure sorting department number from small to big.
 
+
 ``` SQL
 select DEPTNO , sum(sal)  Total_sal 
 from EMP
@@ -39,5 +40,22 @@ having sum(SAL) > 10000
 order by DEPTNO ASC
 ```
 ![image](https://user-images.githubusercontent.com/96119184/178312555-98551330-c09b-4cc0-8ade-bd7caa599b18.png)
+
+4. Get department name wise total salarys.
+
+   ``` SQL
+   Select DNAME,sum(sal) Total_sal
+from emp,dept
+where emp.deptno=dept.deptno
+group by DNAME
+```
+
+![image](https://user-images.githubusercontent.com/96119184/178414291-0be452de-47f7-413b-81d7-5b1f786cd2d0.png)
+
+   
+5.  Get department name wise salarys with more than 10000 salary expenditure.
+6.  Get department number wise salarys with more than 10000 salary expenditure sorting department number from small to big.
+
+
 
 
