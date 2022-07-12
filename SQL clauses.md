@@ -108,6 +108,17 @@ WHERE sal = (SELECT MAX(sal)
 
 10. Get top 2nd salary employee entire information.
 11. Get bottom salary employee entire information.
+``` SQL
+SELECT *
+FROM emp
+WHERE sal = (SELECT Min(sal)
+                FROM emp)
+```
+
+![image](https://user-images.githubusercontent.com/96119184/178472104-02384a6f-9324-43c3-b0c8-d8032216411f.png)
+
+
+
 12. Get bottom 2nd salary employee entire information.
 
 
