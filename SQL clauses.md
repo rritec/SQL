@@ -92,9 +92,13 @@ group by DNAME
 
 ![image](https://user-images.githubusercontent.com/96119184/178429103-ebd52c17-13e0-4711-951c-55ef04cefe4e.png)
 
+
+
+
+
 9. Get top salary employee entire information.
 
-```SQL
+
 10. Get top 2nd salary employee entire information.
 11. Get bottom salary employee entire information.
 12. Get bottom 2nd salary employee entire information.
