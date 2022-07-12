@@ -43,12 +43,14 @@ order by DEPTNO ASC
 
 4. Get department name wise total salarys.
 
-   ``` SQL
+``` SQL
    Select DNAME,sum(sal) Total_sal
 from emp,dept
 where emp.deptno=dept.deptno
 group by DNAME
 ```
+
+ 
 
 ![image](https://user-images.githubusercontent.com/96119184/178414291-0be452de-47f7-413b-81d7-5b1f786cd2d0.png)
 
