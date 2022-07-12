@@ -82,7 +82,19 @@ order by dname asc
 
 
 7. Get All Department Names and count of employees in each department.
+
+''' SQL
+Select DNAME, count(ENAME) count_of_employess
+from emp,dept
+where emp.deptno=dept.deptno
+group by DNAME
+```
+
+![image](https://user-images.githubusercontent.com/96119184/178429103-ebd52c17-13e0-4711-951c-55ef04cefe4e.png)
+
 9. Get top salary employee entire information.
+
+```SQL
 10. Get top 2nd salary employee entire information.
 11. Get bottom salary employee entire information.
 12. Get bottom 2nd salary employee entire information.
