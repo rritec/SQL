@@ -145,7 +145,8 @@ where rnk=2
 14. How to convert Date datatype to Char datatype?
 
 ``` SQL
-select HIREDATE, cast( HIREDATE as char(11)) as 'Convertedhiredate' from EMP
+select HIREDATE, cast( HIREDATE as char(11)) as 'Convertedhiredate' 
+from EMP
 ```
 ![image](https://user-images.githubusercontent.com/96119184/181229731-2d655d65-7208-49ec-beb0-6b3324dcc3dd.png)
 
