@@ -152,6 +152,15 @@ select HIREDATE, cast( HIREDATE as char(11)) as 'Convertedhiredate' from EMP
 
 
 15. How to convert Char datatype to date?
+
+```SQL
+SELECT [Convertedhiredate],
+      CAST([Convertedhiredate] AS date) as 'Date-CAST'      
+FROM [dbo].[test123]
+```
+
+![image](https://user-images.githubusercontent.com/96119184/181243046-5c31acd2-a6dd-4b18-a165-79c8f96fa8bb.png)
+
 16. How to convert Int datatype float?
 17. What is the difference between Union and Union all?
 
