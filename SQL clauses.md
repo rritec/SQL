@@ -165,6 +165,19 @@ select * from emp10
 
 ![image](https://user-images.githubusercontent.com/96119184/181237409-e69bf636-5962-414b-94cf-1465f5246980.png)
 
+
+```SQL
+
+select * from emp10
+union all
+select * from emp10
+```
+
+![image](https://user-images.githubusercontent.com/96119184/181237845-ddf55d86-c1c6-40bb-8357-f298e0971be4.png)
+
+
+
+
 18. Get deptatment wise totalsal, for all departments.
 19. How to write query with sql result from one table to anpther table?
 
