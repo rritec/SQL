@@ -198,13 +198,13 @@ select
 
 ![image](https://user-images.githubusercontent.com/96119184/181241083-10221170-ad53-4467-9885-f0afea0b70f0.png)
 
+18. Get deptatment name wise totalsal, for all department names.
 
-
-19. How to write query with sql result from one table to anpther table?
+19. Create table using SQL Query Result?
 
 ```SQL
 SELECT HIREDATE, cast( HIREDATE as char(11)) as 'Convertedhiredate' INTO [dbo].[test123] FROM [dbo].[EMP];
-``
+```
 
 
 
