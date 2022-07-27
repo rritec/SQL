@@ -155,6 +155,11 @@ select HIREDATE, cast( HIREDATE as char(11)) as 'Convertedhiredate' from EMP
 16. How to convert Int datatype float?
 17. What is the difference between Union and Union all?
 18. Get deptatment wise totalsal, for all departments.
+19. How to write query with sql result from one table to anpther table?
+
+```SQL
+SELECT HIREDATE, cast( HIREDATE as char(11)) as 'Convertedhiredate' INTO [dbo].[test123] FROM [dbo].[EMP];
+``
 
 
 
