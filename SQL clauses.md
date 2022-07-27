@@ -142,7 +142,7 @@ where rnk=2
 ![image](https://user-images.githubusercontent.com/96119184/178486037-0450f9a1-bf15-46fc-87c7-b88235b5a28d.png)
 
 13. How to delete duplicate records from the table?
-14. How to convert char datatype to date datatype?
+14. How to convert Date datatype to Char datatype?
 
 ``` SQL
 select HIREDATE, cast( HIREDATE as char(11)) as 'Convertedhiredate' from EMP
@@ -151,7 +151,7 @@ select HIREDATE, cast( HIREDATE as char(11)) as 'Convertedhiredate' from EMP
 
 
 
-15. How to convert Date datatype to char?
+15. How to convert Char datatype to date?
 16. How to convert Int datatype float?
 17. What is the difference between Union and Union all?
 18. Get deptatment wise totalsal, for all departments.
