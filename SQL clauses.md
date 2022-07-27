@@ -154,6 +154,17 @@ select HIREDATE, cast( HIREDATE as char(11)) as 'Convertedhiredate' from EMP
 15. How to convert Char datatype to date?
 16. How to convert Int datatype float?
 17. What is the difference between Union and Union all?
+
+```SQL
+
+select * from emp10
+union 
+select * from emp10
+```
+
+
+![image](https://user-images.githubusercontent.com/96119184/181237409-e69bf636-5962-414b-94cf-1465f5246980.png)
+
 18. Get deptatment wise totalsal, for all departments.
 19. How to write query with sql result from one table to anpther table?
 
