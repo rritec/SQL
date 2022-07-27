@@ -176,9 +176,20 @@ select * from emp10
 ![image](https://user-images.githubusercontent.com/96119184/181237845-ddf55d86-c1c6-40bb-8357-f298e0971be4.png)
 
 
-
-
 18. Get deptatment wise totalsal, for all departments.
+
+```SQL
+select 
+      deptno,
+	  SUM(sal) as Total_salary
+	  from EMP
+	  Group by DEPTNO
+```
+
+![image](https://user-images.githubusercontent.com/96119184/181241083-10221170-ad53-4467-9885-f0afea0b70f0.png)
+
+
+
 19. How to write query with sql result from one table to anpther table?
 
 ```SQL
