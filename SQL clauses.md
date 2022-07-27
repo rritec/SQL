@@ -145,11 +145,9 @@ where rnk=2
 14. How to convert char datatype to date datatype?
 
 ``` SQL
-SELECT CONVERT (DATETIME, RIGHT('06122022', 4) + LEFT('06122022', 2)
-                          + Substring('06122022', 3, 2)) AS "Datatype" 
+select HIREDATE, cast( HIREDATE as char(11)) as 'Convertedhiredate' from EMP
 ```
-
-![image](https://user-images.githubusercontent.com/96119184/180943656-9895502d-83c6-4a78-9739-4b47acb9738e.png)
+![image](https://user-images.githubusercontent.com/96119184/181229731-2d655d65-7208-49ec-beb0-6b3324dcc3dd.png)
 
 
 
