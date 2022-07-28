@@ -142,6 +142,40 @@ where rnk=2
 ![image](https://user-images.githubusercontent.com/96119184/178486037-0450f9a1-bf15-46fc-87c7-b88235b5a28d.png)
 
 13. How to delete duplicate records from the table?
+```SQL
+**Use query to create table**
+create table test (
+Deptno int,
+Dname varchar(225),
+Loc varchar(225)
+);
+```
+```SQL
+**Inserting dupilcate values into table**
+Insert into test (Deptno , Dname , Loc) values(10 , 'ACCOUNTING' , 'NEW YORK')
+Insert into test (Deptno , Dname , Loc) values(10 , 'ACCOUNTING' , 'NEW YORK')
+Insert into test (Deptno , Dname , Loc) values(20 , 'clerk' , 'india')
+Insert into test (Deptno , Dname , Loc) values(20 , 'clerk' , 'india')
+```
+![image](https://user-images.githubusercontent.com/96119184/181483849-7f0d58e6-46d0-482b-b680-a9a7d46f2b91.png)
+
+```SQL
+**Use query to remove duplicate rows from table**
+
+ WITH CTE AS
+(
+SELECT *,ROW_NUMBER() OVER (PARTITION BY DEPTNO , DNAME , LOC ORDER BY DEPTNO , DNAME , LOC) AS RN
+FROM test
+)
+DELETE FROM CTE WHERE RN<>1
+```
+**After removing duplicate rows from table**
+'''SQL
+Select * from test
+```
+![image](https://user-images.githubusercontent.com/96119184/181485059-1b5d6308-5413-48e8-9c62-1ced5f2de9c9.png)
+
+
 14. How to convert Date datatype to Char datatype?
 
 ``` SQL
