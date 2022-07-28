@@ -177,7 +177,7 @@ DELETE FROM CTE WHERE RN<>1
 Select * from test
 ```
 
-![image](https://user-images.githubusercontent.com/96119184/181485059-1b5d6308-5413-48e8-9c62-1ced5f2de9c9.png)
+![image](https://user-images.githubusercontent.com/96119184/181487449-9c8f53f6-fc33-4ce1-b2f1-0265b81ec198.png)
 
 
 14. How to convert Date datatype to Char datatype?
