@@ -144,6 +144,7 @@ where rnk=2
 13. How to delete duplicate records from the table?
 ```SQL
 **Use query to create table**
+
 create table test (
 Deptno int,
 Dname varchar(225),
@@ -152,6 +153,7 @@ Loc varchar(225)
 ```
 ```SQL
 **Inserting dupilcate values into table**
+
 Insert into test (Deptno , Dname , Loc) values(10 , 'ACCOUNTING' , 'NEW YORK')
 Insert into test (Deptno , Dname , Loc) values(10 , 'ACCOUNTING' , 'NEW YORK')
 Insert into test (Deptno , Dname , Loc) values(20 , 'clerk' , 'india')
