@@ -201,6 +201,16 @@ FROM [dbo].[test123]
 ![image](https://user-images.githubusercontent.com/96119184/181243046-5c31acd2-a6dd-4b18-a165-79c8f96fa8bb.png)
 
 16. How to convert Int datatype float?
+
+```SQL
+
+Select SAL, CAST(SAL as int) as 'converting int to float'
+ from EMP
+```
+
+![image](https://user-images.githubusercontent.com/96119184/181489643-62eed295-6c20-4f57-b3ab-93fc2db9a5e8.png)
+
+
 17. What is the difference between Union and Union all?
 
 ```SQL
