@@ -170,9 +170,11 @@ FROM test
 DELETE FROM CTE WHERE RN<>1
 ```
 **After removing duplicate rows from table**
-'''SQL
+
+```SQL
 Select * from test
 ```
+
 ![image](https://user-images.githubusercontent.com/96119184/181485059-1b5d6308-5413-48e8-9c62-1ced5f2de9c9.png)
 
 
