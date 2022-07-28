@@ -200,11 +200,35 @@ select
 
 18. Get deptatment name wise totalsal, for all department names.
 
+```SQL
+  Select dname,round(isnull(sum(sal),0),4) as total_sal
+from emp Right outer join dept
+on emp.deptno=dept.deptno
+group by DNAME
+
+```
+![image](https://user-images.githubusercontent.com/96119184/181463904-43d8656c-8586-4aaa-b027-64b556b9788e.png)
+
+
 19. Create table using SQL Query Result?
 
 ```SQL
 SELECT HIREDATE, cast( HIREDATE as char(11)) as 'Convertedhiredate' INTO [dbo].[test123] FROM [dbo].[EMP];
 ```
+20. Round the number to 2 decimal places?
+
+```SQL
+SELECT ROUND(235.415, 2) AS RoundValue;
+```
+
+![image](https://user-images.githubusercontent.com/96119184/181465079-bb72e3cd-1cbb-45ff-9897-e02a029565c2.png)
+
+
+
+
+
+
+
 
 
 
