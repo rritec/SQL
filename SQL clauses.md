@@ -106,17 +106,17 @@ WHERE sal = (SELECT MAX(sal)
 ![image](https://user-images.githubusercontent.com/96119184/178471472-b6242384-4963-4538-83a0-3a96db8635cf.png)
 
 
-10. Get top 2nd salary employee entire information.
+10. Get  salary employees entire information.
 
 ``` SQL
 select * from (SELECT e.*,
-   DENSE_RANK() OVER (ORDER BY sal Desc) AS Rnk
+   DENSE_RANK() OVER (ORDER BY sal asc) AS DENSE_Rnk
 FROM emp as e) as sub_query
-where rnk=2
+
 ```
 
 
-![image](https://user-images.githubusercontent.com/96119184/178485441-ed63a9b4-6a1e-4bf4-982d-607fd4b07b81.png)
+![image](https://user-images.githubusercontent.com/20516321/193268634-63b65e9d-9cce-4f55-8539-1605eb572b14.png)
 
 11. Get bottom salary employee entire information.
 ``` SQL
